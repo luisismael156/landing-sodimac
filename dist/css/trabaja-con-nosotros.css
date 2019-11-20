@@ -19,24 +19,24 @@
     padding-right: 0px !important;
     padding-left: 0px !important;
  }
- #main .col-md-12 {
+ /* #main .col-md-12 {
     padding-right: 0px !important;
     padding-left: 0px !important;
- }
+ } */
 
  #banner-trabaja-nosotros 
  {
 position: relative;
  }
 .text-content{
-   margin-top: 80px;
+   margin-top: calc(100% - 200px);
 
 }
  #banner-trabaja-nosotros .img-banner{
    background: url(../img/banner-trabaja-nosotros.jpg);
    width: 100%;
    background-size: cover;
-   height: 45vh;
+   height: 340px;
    background-position-x: center;
  }
 
@@ -46,10 +46,10 @@ position: relative;
     top: 0;
     left: 15%;
     bottom: 0;
-    padding: 25px 25px;
+    padding: 25px 30px;
     
     color: white;
-    width: 340px;
+
 }
 
 .text-banner .text-content h1{
@@ -76,10 +76,11 @@ display: block
 
 .text-description
 {
-   font-size: 17px;
+   font-size: 16px;
    line-height: 21px;
-   margin-left: calc(100% - 264px);
+   margin-left: calc(100% - 246px);
    margin-top: 20px;
+
 
 }
 
@@ -168,4 +169,29 @@ iframe{
 }
 .mt-3{
 margin-top: 3rem;
+}
+@media (max-width: 768px) {
+   .title-section{
+
+      text-align: center;
+   }
+#principios .col-sm-4{
+
+   max-width: 80%;
+   margin: 0 auto;
+}
+#principios .card-image img{
+   width: 100%;
+}
+}
+
+
+
+@media (max-width: 480px) {
+   #principios .col-sm-4{
+   
+      max-width: 90%;
+      margin: 0 auto;
+   }
+
 }

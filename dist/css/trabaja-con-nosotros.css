@@ -568,6 +568,13 @@ position: relative;
    height: 430px;
 }
 }
+@media (max-width: 1320px) {
+
+   #banner-trabaja-nosotros .text-banner {   
+      left: 9%;
+      padding: 25px 28px;
+  }
+   }
 
 
 @media (max-width: 1199px) {
@@ -612,6 +619,13 @@ position: relative;
    }
 }
 @media (max-width: 991px) {
+
+   #banner-trabaja-nosotros .img-banner {
+      background: url(../img/banner-trabaja-nosotros-mb.jpg);
+      background-size: cover;
+
+    
+  }
    #tuoportunidad .container-body.no-p {
       width: 100%;
       padding-right: 0px;

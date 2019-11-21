@@ -486,8 +486,57 @@ width: 33%;
 .text-content-oportunidad{
    padding: 2rem;
 }
+#dejatuCV{
 
+   background-color: #EEEEEE;
+   height: 450px;
+   margin-top: 19rem
+}
+#dejatuCV .row-CV{
+   display: flex;
+   justify-content: center;
+}
 
+#dejatuCV .card-CV
+{
+margin-right: 3rem;
+position: relative;
+
+}
+
+#dejatuCV .button-cv{
+
+   position: absolute;
+   bottom: -40px;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+#dejatuCV .bolsa,
+ .cv{
+   width: 40%;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   padding: 7px ;
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+   margin-right: .5rem;
+}
+#dejatuCV .container-top{
+   top: -210px;
+    position: relative;}
+
+    #dejatuCV a{
+         color: white;
+         text-decoration: none;
+    }
+
+    #dejatuCV a:hover{
+      color: white;
+      text-decoration: underline;
+ }
 
 /* mediaquerys */
 
@@ -681,6 +730,31 @@ flex-direction: row-reverse;
 }
 
 @media (max-width: 767px) {
+   #dejatuCV {
+      background-color: transparent;
+     
+  }
+   #dejatuCV .row-CV {
+  
+      flex-direction: column;
+   }
+   #dejatuCV .img-CV img{
+
+      margin: 0 auto;
+      display: block;
+      width: 90%;
+  }
+  #dejatuCV .vertical-content{
+
+   font-size: 12px;
+  }
+  #dejatuCV .card-CV {
+   margin-right: 0rem;
+}
+#dejatuCV .card-CV.two{
+   margin-top: 8rem;
+
+}
   
    .row-fl.two .col-fl-one, .row-fl.two .col-fl-two, .row-fl.two .col-fl-three{
       flex-direction: column-reverse;

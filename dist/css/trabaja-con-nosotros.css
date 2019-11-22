@@ -88,7 +88,7 @@ position: relative;
  }
 
  #banner-trabaja-nosotros .img-banner{
-   background: url(../img/banner-trabaja-nosotros.jpg);
+   background: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/banner-trabaja-nosotros.jpg);
    width: 100%;
    background-size: cover;
    height: 340px;
@@ -137,12 +137,13 @@ position: relative;
 #atrevete .list-item{
    display: flex;
    justify-content: center;
+
    
 }
 
-#atrevete .item{
+#atrevete a{
    display: inline-block;
-   width: 22.5%;
+
    text-align: center;
    background-color: #CBCBCB;
    color: #373737;
@@ -153,20 +154,26 @@ position: relative;
 
 }
 
-#atrevete .item:hover{
+#atrevete .list-item a:hover{
    background-color: #dd0021;
    color: white;
    transition: all ease .3s;
+
 }
 
-#atrevete .item a{
-   color: #373737;
+#atrevete .list-item a{
+   text-decoration: none;
+    width: 22.5%;
+    margin-right: 10px;
 }
 #atrevete .item:hover a{
    color: white;
    text-decoration: none;
 }
-#atrevete .item.active{
+#atrevete .item{
+   position: relative;
+}
+#atrevete a.active{
    background-color: #dd0021;
    color: white;
    transition: all ease .3s;
@@ -305,7 +312,7 @@ margin-bottom: 1rem;
 
 .navbar-toggle{
    float: none;
-   right: 17px;
+   right: 13px;
    border:transparent;
 }
 .navbar-default{
@@ -342,7 +349,10 @@ margin-bottom: 1rem;
    border-color: #dd0021;
 }
 
-
+.nav>li {
+  
+   text-align: center;
+}
 
 .fijo{
    position: fixed;
@@ -358,7 +368,7 @@ margin-bottom: 1rem;
 
 #comprometidos{
 
-   padding: 0 0 20px 0;
+   padding: 0;
 }
 #comprometidos .title-section{
    font-size: 26px;
@@ -390,7 +400,7 @@ margin-bottom: 1rem;
 #comprometidos .swiper-button-prev {
    background-color: #dd0021;
    padding: 30px 7px;
-   background-image: url(../img/flecha-slider.png);
+   background-image: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/flecha-slider.png);
    background-size: 12px;
    background-position-y: 50%;
 }
@@ -399,7 +409,7 @@ margin-bottom: 1rem;
 #comprometidos .swiper-button-next {
    background-color: #dd0021;
    padding: 30px 7px;
-   background-image: url(../img/flecha-slider-right.png);
+   background-image: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/flecha-slider-right.png);
    background-size: 12px;
    background-position-y: 50%;
 }
@@ -424,7 +434,7 @@ margin-bottom: 1rem;
 }
 
 #tufuturo{
-
+margin-top: 0;
    background-color: #EEEEEE;
 }
 
@@ -496,12 +506,12 @@ width: 33%;
 
 .bg-image-right{
 
-   background: url(../img/oportunidad-img-1.jpg);
+   background: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/oportunidad-img-1.jpg);
    background-size: cover;
 }
 
 .bg-image-left{
-   background: url(../img/oportunidad-img-2.jpg);
+   background: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/oportunidad-img-2.jpg);
    background-size: cover;
 }
 .text-content-oportunidad{
@@ -533,18 +543,7 @@ position: relative;
    width: 100%;
    justify-content: center;
 }
-#dejatuCV .bolsa,
- .cv{
-   width: 40%;
-   justify-content: center;
-   text-align: center;
-   color: white;
-   padding: 7px ;
-   border: 2px solid white;
-   display: flex;
-   align-items: center;
-   margin-right: .5rem;
-}
+
 #dejatuCV .container-top{
    top: -210px;
     position: relative;}
@@ -558,6 +557,156 @@ position: relative;
       color: white;
       text-decoration: underline;
  }
+ a li.conocenos::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-conocenos.png);
+   bottom: 0;
+   left: 14%;
+    top: -5px;
+    transform: scale(0.9);
+    width: 26px;
+    position: absolute;
+}
+a:hover li.conocenos::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-conocenos-white.png);
+bottom: 0;
+left: 14%;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+ a.active li.conocenos::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-conocenos-white.png);
+   bottom: 0;
+   left: 14%;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+
+
+
+a li.futuro::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-tufuturo.png);
+   bottom: 0;
+    left: -5px;
+    top: -5px;
+    transform: scale(0.9);
+    width: 26px;
+    position: absolute;
+}
+a:hover li.futuro::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-tufuturo-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+a.active li.futuro::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-tufuturo-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+.item.futuro{
+   padding-left: 15px;
+
+}
+
+
+
+a li.bienestar::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-bienestar.png);
+   bottom: 0;
+    left: -5px;
+    top: -5px;
+    transform: scale(0.9);
+    width: 26px;
+    position: absolute;
+}
+a:hover li.bienestar::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-bienestar-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+a.active li.bienestar::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-bienestar-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+.item.bienestar{
+   padding-left: 15px;
+}
+
+
+
+a li.cv::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-cv.png);
+   bottom: 0;
+    left: -5px;
+    top: -5px;
+    transform: scale(0.9);
+    width: 26px;
+    position: absolute;
+}
+a:hover li.cv::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-cv-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+a.active li.cv::before {
+   content: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/icon-cv-white.png);
+bottom: 0;
+   left: -5px;
+   top: -5px;
+   transform: scale(0.9);
+   width: 26px;
+   position: absolute;
+}
+
+
+.item.cv{
+   padding-left: 0px;
+}
+
+
+
+#dejatuCV .bolsa,
+#dejatuCV .cv{
+   width: 40%;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   padding: 7px ;
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+   margin-right: .5rem;
+}
 
 /* mediaquerys */
 
@@ -599,6 +748,25 @@ position: relative;
 
 
 @media (max-width: 1199px) {
+
+   .item.cv,.item.bienestar,.item.futuro{
+      padding-left: 0px;
+   }
+   a.active li.conocenos::before, a li.conocenos::before {
+      content: "";
+   }
+   a.active li.futuro::before, a li.futuro::before {
+      content: "";
+   }
+   a.active li.bienestar::before, a li.bienestar::before {
+      content: "";
+   }
+   a.active li.cv::before, a li.cv::before {
+      content: "";
+   }
+
+
+
    #tuoportunidad .text-content-oportunidad {
       padding: 1.5rem;
   }
@@ -640,6 +808,11 @@ position: relative;
    }
 }
 @media (max-width: 991px) {
+   #atrevete a {
+
+      padding: 0;
+
+  }
    .text-banner .text-content .title-banner-two {
       font-size: 28px;
   }
@@ -655,7 +828,7 @@ position: relative;
 }
 
    #banner-trabaja-nosotros .img-banner {
-      background: url(../img/banner-trabaja-nosotros-mb.jpg);
+      background: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/banner-trabaja-nosotros-mb.jpg);
       background-size: cover;
 
     
@@ -778,6 +951,10 @@ flex-direction: row-reverse;
 }
 
 @media (max-width: 767px) {
+   #dejatuCV {
+      height: auto;
+  
+  }
 
    #banner-trabaja-nosotros .text-banner {
       padding: 0;
@@ -806,7 +983,7 @@ flex-direction: row-reverse;
 }
 
    #banner-trabaja-nosotros .img-banner {
-      background: url(../img/banner-trabaja-nosotros-mb-2.jpg);
+      background: url(/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/banner-trabaja-nosotros-mb-2.jpg);
       background-size: cover;
   }
   #banner-trabaja-nosotros .text-description {

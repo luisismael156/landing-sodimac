@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
 
-  <link rel="stylesheet" href="/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/css/trabaja-con-nosotros.css?v=19" />
+  <link rel="stylesheet" href="/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/css/trabaja-con-nosotros.css?v=30" />
 
   <title>Bolsa de trabajo</title>
 </head>
@@ -34,15 +34,20 @@
     <nav class="navbar navbar-default menu-sticky" role="navigation">
       <!-- El logotipo y el icono que despliega el menú se agrupan
            para mostrarlos mejor en los dispositivos móviles -->
-      <div class="navbar-header">
-        <div class="navegacion">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target=".navbar-ex1-collapse">
-          <img src="/static/categorias/contenidoEstatico/masdesodimac/2019/Trabaja-con-nosotros/dist/img/img-button-menu.png" class="img-fluid" alt="">
-        </button>
-        <a class="navbar-brand">MENÚ</a>
-      </div>
-      </div>
+           <div class="navbar-header">
+              <div class="navegacion">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <div class="nav-container-icon">
+                    <div id="nav-icon1" class="open rot">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+                <a class="navbar-brand">MENÚ</a>
+              </div>
+            </div>
     
       <!-- Agrupar los enlaces de navegación, los formularios y cualquier
            otro elemento que se pueda ocultar al minimizar la barra -->
@@ -187,6 +192,13 @@
 
     });
   </script>
+  <script>
+      $(document).ready(function(){
+        $('#nav-icon1').click(function(){
+          $(this).toggleClass('rot');
+        });
+      });
+      </script>
 </body>
 
 </html>
